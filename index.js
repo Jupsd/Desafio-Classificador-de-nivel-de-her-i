@@ -1,6 +1,8 @@
-function classificarHeroi (nome, xp) {
-    let nivel;
-}
+const nome = prompt("Digite o nome do herói:");
+const xp = parseInt(prompt("Digite a quantidade de experiência (XP) do herói:"), 10);
+
+let nivel;
+
 if (xp < 1000) {
     nivel = "Ferro";
 }else if (xp >=2001 && xp <=5000)
@@ -18,3 +20,4 @@ if (xp < 1000) {
 } else {
     nivel = "Radiante";
 }
+alert(`O Herói de nome ${nome} está no nível de ${nivel}.`);
